@@ -62,7 +62,7 @@ def getWeather():
 # 获取北京时间确定随机步数&启动主函数
 def getBeijinTime():
     global K, type
-    K = 3.0
+    K = 2.5
     type = ""
     hea = {'User-Agent': 'Mozilla/5.0'}
     url = r'https://apps.game.qq.com/CommArticle/app/reg/gdate.php'
@@ -80,8 +80,7 @@ def getBeijinTime():
         max_1 = 3500 * max_ratio
         min_1 = int(K * min_1)
         max_1 = int(K * max_1)
-        min_1 = min(min_1, 90000)
-        max_1 = min(max_1, 98000)
+        max_1 = min(max_1, 88888)
     else:
         print("获取北京时间失败")
         return
